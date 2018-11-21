@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1 class="header__text">Create simple figures:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg> 
+        <div class="simple--task">
+            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="1" class="line" >
+                <line x1="0" x2="300" y1="1" y2="1" stroke="green" stroke-width="1" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="260">
+                <circle cx="130" cy="130" r="125" fill="blue"  stroke="red" stroke-width="1" class="circle"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="300" width="300">
+                <line x1="1" y1="300" x2="300" y2="1" stroke="black" stroke-width="3" class="close"/>
+                <line x1="1" y1="1" x2="300" y2="300" stroke="red" stroke-width="3" class="close"/>
+            </svg>
+            <svg  xmlns="http://www.w3.org/2000/svg" height="220" width="400">
+                <ellipse cx="200" cy="115" rx="200" ry="100"
+                style="fill:transparent;stroke:yellow;stroke-width:4; stroke-dasharray: 10;" />
+            </svg>
+        </div>
+        <h1 class="header__text">3 ways to add svg to the document:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg> 
+        <div class="simple--task">
+            <div class="img__src">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+                    <title>html-five</title>
+                    <path d="M7.567 0l10.268 115.204 46.094 12.796 46.216-12.816 10.287-115.184h-112.865zM98.079 37.678h-54.068l1.288 14.469h51.496l-3.88 43.376-28.98 8.032-28.947-8.032-1.979-22.189h14.187l1.006 11.279 15.733 4.239 0.035-0.010 15.742-4.249 1.634-18.319h-48.968l-3.812-42.725h70.777l-1.263 14.128z"></path>
+                </svg>
+                <object type="image/svg+xml" data="css3.svg" width="128" height="128"></object>
+                <object width="128" height="128" data="data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMjQiIGhlaWdodD0iMTAyNCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCI+Cjx0aXRsZT5jc3MzPC90aXRsZT4KPGcgaWQ9Imljb21vb24taWdub3JlIj4KPC9nPgo8cGF0aCBmaWxsPSIjZjdkZjFlIiBkPSJNLTMyLTMyaDEwODh2MTA4OGgtMTA4OHYtMTA4OHpNOTY2Ljg3MyA3OTYuNTEyYy03LjkzNS00OS42NC00MC4yNTYtOTEuMzQ1LTEzNi4xMzYtMTMwLjI0MS0zMy4zNjctMTUuNjQtNzAuNDQ4LTI2LjUyLTgxLjQ2NC01MS42OC00LjEyNy0xNC45Ni00Ljc2LTIzLjEyLTIuMDg3LTMxLjk2IDYuOC0yOS4yODcgNDEuNDgtMzguMDgwIDY4LjY4LTI5LjkyIDE3LjY4IDUuNDQgMzQgMTkuMDQwIDQ0LjI0NyA0MC44IDQ2Ljg3My0zMC42NDcgNDYuODczLTMwLjY0NyA3OS41Ni01MS0xMi4yNC0xOS4wNDAtMTguMzEzLTI3LjI0Ny0yNi41NjctMzUuMzYtMjguNTYtMzEuOTYtNjYuNTkzLTQ4LjI4LTEyOC40NzMtNDYuODczbC0zMS45NiA0LjAzM2MtMzAuNjQ3IDcuNDgtNTkuODQgMjMuOC03Ny41MiA0NS41Ni01MS42OCA1OC41MjctMzYuNzY3IDE2MC41MjcgMjUuNzkzIDIwMi42ODcgNjEuODggNDYuMjQgMTUyLjM2NyA1Ni4zOTMgMTYzLjkyNyA5OS45NiAxMC44OCA1My4wNDAtMzkuNDQgNzAuMDQwLTg5LjEyNyA2My45Mi0zNi43NjctOC4xNi01Ny4xMi0yNi41NjctNzkuNTYtNjAuNTY3bC04Mi45NiA0Ny42NDdjOS41MiAyMS43NiAyMC40IDMxLjIzMyAzNi43MiA1MC4yNzMgNzguODggNzkuNjA3IDI3Ni4wODAgNzUuNTI3IDMxMS40ODctNDUuNTEzIDEuMzEzLTQuMDgwIDEwLjg4LTMxLjk2IDMuMzUzLTc0LjhsMi4wODcgMy4wMzl6TTU1OS42NDcgNDY4LjA3MmgtMTAxLjkxMWMwIDg3Ljg1Ni0wLjQwOCAxNzUuMTY4LTAuNDA4IDI2My4xNiAwIDU1Ljg0OSAyLjg1NiAxMDcuMTIxLTYuMjU2IDEyMi44OTctMTQuOTYgMzEuMjMzLTUzLjQ5NSAyNy4yNDctNzAuOTkyIDIxLjc2LTE3Ljk1Mi04Ljg4Ny0yNy4wNjQtMjEuMTI3LTM3LjYyNS0zOC43Ni0yLjg1Ni00Ljc2LTQuOTg1LTguODg3LTUuNzU5LTguODg3bC04Mi43MzUgNTFjMTMuODI1IDI4LjU2IDM0IDUzLjEyOSA2MC4wMjMgNjguNzY5IDM4Ljc2IDIzLjEyIDkwLjg0OCAzMC42IDE0NS4zODQgMTguMzYgMzUuNDk2LTEwLjI0NyA2Ni4wOTYtMzEuMzI3IDgyLjA5Ny02My45NjcgMjMuMTItNDIuMTYgMTguMjI0LTkzLjg0IDE3Ljk5OS0xNTEuNjg3IDAuNTQ0LTkzLjExMyAwLTE4Ni4yNzMgMC0yODAuMTEzbDAuMTgzLTIuNTM3eiI+PC9wYXRoPgo8L3N2Zz4K"></object>
+            </div>
+        </div>
+        <h1 class="header__text">Loader:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg>
+        <div class="simple--task">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 60 60"
+                class="loader">
+                <circle cx="30" cy="30" r="26"/>
+            </svg>
+        </div>
+        <h1 class="header__text">Responsive SVG:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg>
+        <div class="simple-task">
+            <div class="img"> 
+                <div class="rectangle" style="text-align:center;">
+                    <svg viewBox="0 0 800 400" class="svg-rectangle--image">
+                        <image x="0" y="0" height="400" width="800" xlink:href="data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMzIgMzIiPgo8dGl0bGU+aG9tZTwvdGl0bGU+CjxwYXRoIGQ9Ik0zMiAxOC40NTFsLTE2LTEyLjQyLTE2IDEyLjQydi01LjA2NGwxNi0xMi40MiAxNiAxMi40MnpNMjggMTh2MTJoLTh2LThoLTh2OGgtOHYtMTJsMTItOXoiPjwvcGF0aD4KPC9zdmc+Cg=="/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <h1 class="header__text">Animated buttons:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg>
+        <div class="simple--task">
+            <svg width="335" height="74"   viewbox="0 0 335 74" class="btn">
+                <rect width="335" height="74" fill="transparent" stroke="#FE0067" stroke-width="3px" class="rect__main  " />
+                <rect width="335" height="74" fill="transparent" stroke="#FE0067" stroke-width="3px" class="rect__modify red"  />
+                <text x="70" y="49" class="rect__text red" width="335" height="74">Continue</text>   
+            </svg>
+            <svg width="335" height="74"   viewbox="0 0 335 74" class="btn">
+                <rect width="335" height="74" fill="transparent" stroke="#7300B3" stroke-width="3px" class="rect__main " />
+                <rect width="335" height="74" fill="transparent" stroke="#7300B3" stroke-width="3px" class="rect__modify purple"  />
+                <text x="70" y="49" class="rect__text purple" width="335" height="74">Continue</text>   
+            </svg>
+        </div>
+        <h1 class="header__text">Hamburger menu:</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" class="line__head">
+            <line x1="0" x2="100%" y1="1" y2="1" stroke="gray" stroke-width="3" rx="20" ry="20" />
+        </svg>
+        <div class="simple--task">
+            <svg xmlns="http://www.w3.org/2000/svg"  height="56" width="56"  class="icon" x="0px" y="0px" viewBox="0 0 100 100">
+                <g class="toggle-menu"> 
+                    <path class="toggle line-1" d="M5 13h90v14H5z"/>
+                    <path class="toggle line-2" d="M5 43h90v14H5z"/>
+                    <path class="toggle line-3" d="M5 73h90v14H5z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
